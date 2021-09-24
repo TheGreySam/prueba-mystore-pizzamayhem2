@@ -22,8 +22,8 @@
           <p class="card-text">
             Total: ${{
               parseInt(
-                producto.precio * (1 - producto.descuento)
-              )
+                producto.precio * (1 - producto.descuento/ 100) * producto.cantidad
+              ).toLocalesString('de-DE')
             }}
           </p>
         </div>

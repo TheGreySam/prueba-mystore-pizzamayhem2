@@ -20,7 +20,9 @@
           <router-link to="/inicio" class="nav-link">Inicio</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/busquedas" class="nav-link">Búsquedas</router-link>
+          <router-link to="/busquedas" class="nav-link">
+            Arma tu pizza
+          </router-link>
         </li>
         <li class="nav-item">
           <router-link to="/ventas" class="nav-link">Ventas</router-link>
