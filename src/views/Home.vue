@@ -7,41 +7,37 @@
     <i class="fas fa-pizza-slice fa-10x p-3"></i>
     <h5 class="card-title">Bienvenido a PIZZA MAYHEM</h5>
     <p class="card-text">Donde podras armar tu pizza y pagarla con</p>
-    <p class="card-text">Last updated 3 mins ago</p>
     <h5 class="card-text">CRIPTOMONEDAS</h5>
   </div>
 </div>
 
     </div>
 
-    <section class="productos">
+    <div>
+    <h4>Todos los productos</h4>
+    <div class="row">
       <div
-      
+        class="col-sm mb-4 mb-md-0"
+        v-for="(producto, $index) in $store.state.productos.todosLosProductos"
+        :key="$index"
       >
-        <h3></h3>
+        <TarjetaProducto :producto="producto" class="mx-auto" />
       </div>
-    </section>
-
-    <TarjetaProductos />
-    
-    
-    
-    
-        
+    </div>
   </div>
+   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 //import HelloWorld from "@/components/HelloWorld.vue";
-
-
+//import Producto from "@/components/Carrito/Producto.vue";
+import TarjetaProducto from '../components/Productos/TarjetaProductos.vue'
 export default {
-  name: "Home",
-  components: {
-    
-  },
-};
+  components: { TarjetaProducto }
+}
+
+
 </script>
 
 <style scoped>

@@ -17,9 +17,11 @@
 import Navbar from "./components/Navbar.vue";
 import Footer from "./components/Footer.vue";
 import Carousel from "./components/Carousel.vue";
+import TarjetaProductos from "./components/Productos/TarjetaProductos.vue";
+import Producto from "./components/Carrito/Producto.vue";
 
 export default {
-  components: { Navbar, Footer, Carousel },
+  components: { Navbar, Footer, Carousel, TarjetaProductos, Producto },
   name: "App",
 };
 </script>
@@ -43,7 +45,7 @@ export default {
   color:rgb(9, 104, 21)
 }
 .footer {
-  position:fixed;
+  position:relative;
   bottom:0;
   color:snow;
   width: 100%;
