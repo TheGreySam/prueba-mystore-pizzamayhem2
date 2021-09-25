@@ -9,9 +9,10 @@
       <i class="fab fa-ethereum fa-3x p-2"></i>
     </div>
     <div class="col col-lg-2">
-      <i class='fab fa-galactic-republic fa-3x'></i>
+      <i class='fab fa-galactic-republic fa-3x p-2'></i>
     </div>
   </div>
+  <br>
   <div>
          <p>Copyright SGL holdings 2021</p>
                             </div>

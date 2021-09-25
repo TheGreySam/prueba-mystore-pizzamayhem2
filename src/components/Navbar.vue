@@ -27,12 +27,22 @@
         <li class="nav-item">
           <router-link to="/ventas" class="nav-link">Ventas</router-link>
         </li>
-        <li class="nav-item">
-          <router-link to="/total" class="nav-link">Total</router-link>
+        <li class="carrito">
+          <router-link to="/carrito" class="nav-link">
+            <i class="fas fa-shopping-cart">
+              <span class="cantidad-carrito">0</span>
+              <div class="dropdown-carrito">
+                <ul class="dropdown-carrito-lista">
+                  <li>Producto</li>
+                </ul>
+              </div>
+            </i>
+          </router-link>
         </li>
         
       </ul>
     </div>
+
   </nav>
 </template>
 

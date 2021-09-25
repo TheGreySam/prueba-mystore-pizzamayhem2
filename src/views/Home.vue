@@ -1,31 +1,24 @@
 <template>
   <div class="home">
+    <div class="">
+      <div class="card bg-dark text-white">
+  <img class="card-img-home " src="@/assets/350606.jpg" alt="Card image">
+  <div class="card-img-overlay">
     <i class="fas fa-pizza-slice fa-10x p-3"></i>
+    <h5 class="card-title">Bienvenido a PIZZA MAYHEM</h5>
+    <p class="card-text">Donde podras armar tu pizza y pagarla con</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+    <h5 class="card-text">CRIPTOMONEDAS</h5>
+  </div>
+</div>
+
+    </div>
+
+    <Producto />
     
-    <h1>Bienvenido a <span class="mayhem">PIZZA MAYHEM</span></h1>
-        <h3>Donde podras armar tu pizza</h3>
-        <h3>y pagarla con</h3>
-        <h2>CRIPTOMONEDAS</h2>
-
-        <b-carousel
-          controls
-          indicators
-          img-width="1024"
-          img-height="480"
-          >
-        <b-carousel-slide img-src="@/assets/284245.jpg"></b-carousel-slide>
-        <b-carousel-slide img-src="@/assets/284677.jpg"></b-carousel-slide>
-        <b-carousel-slide img-src="@/assets/284777.jpg"></b-carousel-slide>
-        <b-carousel-slide img-src="@/assets/287411.jpg"></b-carousel-slide>
-        <b-carousel-slide img-src="@/assets/350606.jpg"></b-carousel-slide>
-
-
-          </b-carousel>
-
-          
-
-        
-
+    
+    
+    
         
   </div>
 </template>
@@ -42,3 +35,24 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+.homeImgtxt {
+  position:absolute;
+  top: 200px;
+  left: 0;
+  width: 100%;
+}
+.homeImg {
+  object-fit: contain;
+  width: 100%;
+  
+}
+.card-img-home {
+  width: 100%;
+  height: 20vw;
+  object-fit: cover;
+  opacity: 30%;
+}
+
+</style>
