@@ -17,7 +17,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <router-link to="/inicio" class="nav-link">Inicio</router-link>
+          <router-link to="/" class="nav-link">Home</router-link>
         </li>
         <li class="nav-item">
           <router-link to="/busquedas" class="nav-link">
@@ -30,9 +30,7 @@
         <li class="nav-item">
           <router-link to="/total" class="nav-link">Total</router-link>
         </li>
-        <li>
-          <i class="fas fa-pizza-slice"></i>
-        </li>
+        
       </ul>
     </div>
   </nav>

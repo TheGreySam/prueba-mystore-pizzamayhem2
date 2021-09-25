@@ -16,12 +16,12 @@ export default {
   components: {
     Producto,
   },
-  methods: [
-  async clickPagar() {
-      await this.$store.dispatch('carrito/comprar')
-      alert('compra procesada, muchas gracias por su preferencia')
-      this.$router.push('/')
-  }]
+//  methods: [
+  //async clickPagar() {
+  //    await this.$store.dispatch('carrito/comprar'),
+  //    alert('compra procesada, muchas gracias por su preferencia'),
+  //    this.$router.push('/'),
+//  }];
 };
 </script>
 

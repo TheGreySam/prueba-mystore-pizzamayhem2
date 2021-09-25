@@ -6,6 +6,9 @@
     <transition name="vista">
       <router-view class="bgpizza p-3"></router-view>
     </transition>
+
+    
+
     <Footer />
   </div>
 </template>
