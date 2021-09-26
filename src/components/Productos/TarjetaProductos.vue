@@ -1,5 +1,5 @@
 <template>
-    <div class="card text-white bg-danger" style="width: 25rem">
+    <div class="card text-white shadow p-1 mb-5 rounded" style="width: 25rem">
     <img class="card-img-top" :src="producto.imagen" alt="Card image cap" />
     <div class="card-body bg-warning text-success ">
       <h1>{{ producto.nombre }}</h1>
@@ -8,9 +8,9 @@
       <li class="list-group-item">Categoria: {{ producto.categoria }}</li>
       <li class="list-group-item">Peso: {{ producto.peso }}</li>
       <li class="list-group-item">Precio: ${{ producto.precio.toString().toLocaleLowerCase() }}</li>
-      <li class="list-group-item text-success bg-warning">
+      <li class="list-group-item text-danger bg-warning">
         <h3>Descuento:</h3>
-        <h2>{{ producto.oferta ? `${producto.descuento} off` : 'Sin descuento asociado' }}</h2>
+        <h1>{{ producto.oferta ? `${producto.descuento} off` : 'Sin descuento asociado' }}</h1>
       </li>
     </ul>
   </div>

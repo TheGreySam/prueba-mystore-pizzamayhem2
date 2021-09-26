@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <Navbar />
+    <Navbar class="shadow"/>
     <Carousel />
 
     <transition name="vista">

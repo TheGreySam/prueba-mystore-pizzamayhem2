@@ -8,7 +8,7 @@ export const productosModule = {
                 categoria: "italiana",
                 peso: "250 gramos",
                 precio: "15.000 pesos",
-                oferta: "descuento del viernes",
+                oferta: true,
                 descuento: "15%",
                 imagen: require("@/assets/284245.jpg")
             },
@@ -28,7 +28,7 @@ export const productosModule = {
                 categoria: "italiana",
                 peso: "250 gramos",
                 precio: "30.000 pesos",
-                oferta: "descuento del domingo",
+                oferta: false,
                 descuento: "25%",
                 imagen: require("@/assets/285777.jpg")
             },
@@ -38,7 +38,7 @@ export const productosModule = {
                 categoria: "texana",
                 peso: "300 gramos",
                 precio: "15.000 pesos",
-                oferta: "descuento del festivo",
+                oferta: true,
                 descuento: "15%",
                 imagen: require("@/assets/287411.jpg")
             },
@@ -48,7 +48,7 @@ export const productosModule = {
                 categoria: "polinésica",
                 peso: "250 gramos",
                 precio: "32.000 pesos",
-                oferta: "sin descuento disponible",
+                oferta: false,
                 descuento: "15%",
                 imagen: require("@/assets/350606.jpg")
             },
@@ -58,7 +58,7 @@ export const productosModule = {
                 categoria: "alemana",
                 peso: "550 gramos",
                 precio: "85.000 pesos",
-                oferta: "descuento del viernes",
+                oferta: true,
                 descuento: "15%",
                 imagen: require("@/assets/284245.jpg")
             },
@@ -78,7 +78,7 @@ export const productosModule = {
                 categoria: "italiana",
                 peso: "750 gramos",
                 precio: "60.000 pesos",
-                oferta: "descuento del domingo",
+                oferta: false,
                 descuento: "25%",
                 imagen: require("@/assets/285777.jpg")
             },
@@ -88,7 +88,7 @@ export const productosModule = {
                 categoria: "texana",
                 peso: "500 gramos",
                 precio: "75.000 pesos",
-                oferta: "descuento del festivo",
+                oferta: false,
                 descuento: "15%",
                 imagen: require("@/assets/287411.jpg")
             },
@@ -98,7 +98,7 @@ export const productosModule = {
                 categoria: "polinésica",
                 peso: "450 gramos",
                 precio: "52.000 pesos",
-                oferta: "sin descuento disponible",
+                oferta: true,
                 descuento: "15%",
                 imagen: require("@/assets/350606.jpg")
             },

@@ -17,11 +17,11 @@
 
     </div>
 
-    <div class="bg-danger">
-    <h2 class="text-white p-3 bg-">Elige tu Pizza!</h2>
+    <div class="navpizza">
+    <h1 class="text-white p-5 bg-dark">Elige tu Pizza!</h1>
     <div class="row">
       <div
-        class="col-sm mb-4 mb-md-0"
+        class="col-sm mb-4 mb-md-0 p-5"
         v-for="(producto, $index) in $store.state.productos.todosLosProductos"
         :key="$index"
       >

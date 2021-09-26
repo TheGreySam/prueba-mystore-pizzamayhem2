@@ -3,6 +3,7 @@ import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Carrito from "../views/Carrito.vue";
 import Login from "../views/Login.vue";
+import ArmaTuPizza from "../views/ArmaTuPizza.vue";
 
 Vue.use(VueRouter);
 
@@ -30,6 +31,11 @@ const routes = [{
     name: "Login",
     component: Login,
     //() => import("./views/Login.vue")
+  },
+  {
+    path: "/armatupizza",
+    name: "ArmaTuPizza",
+    component: ArmaTuPizza,
   }
 ];
 

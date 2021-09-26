@@ -20,7 +20,7 @@
           <router-link to="/" class="nav-link">Home</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/busquedas" class="nav-link">
+          <router-link to="/armatupizza" class="nav-link">
             Arma tu pizza
           </router-link>
         </li>

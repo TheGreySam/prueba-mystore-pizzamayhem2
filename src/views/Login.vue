@@ -2,56 +2,84 @@
   <div class="home">
 
 
-<div class="card bg-dark text-white">
-  <img class="card-img-home" src="@/assets/285777.jpg" alt="Card image">
+<div class="card navpizza text-black">
+  <img class="card-img" src="@/assets/285777.jpg" alt="Card image" style="height: 650pt; object-fit: cover;">
   <div class="card-img-overlay ">
-    
+	  <section class="h-500 gradient-form" >
+  <div class="container py-5 h-100 ">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-xl-10">
+        <div class="card navpizza rounded-3 text-black">
+          <div class="row g-0">
+            <div class="col-lg-6">
+              <div class="card-body  p-md-5 mx-md-4">
+
+                <div class="text-center">
+                  <i class="fas fa-pizza-slice fa-10x text-warning pb-3"></i>
+                  <h4 class="mt-1 mb-5">PIZZA MAYHEM</h4>
+                </div>
+
+                <form>
+                  <p>Porfavor ingresa a tu cuenta</p>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="form2Example11" class="form-control" placeholder="Número telefónico o correo electrónico"/>
+                    <label class="form-label" for="form2Example11">Usuario</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" id="form2Example22" class="form-control" />
+                    <label class="form-label" for="form2Example22">Contraseña</label>
+                  </div>
+
+                  <div class="text-center pt-1 mb-5 pb-1">
+                    <button class="btn btn-warning btn-block fa-lg gradient-custom-2 mb-3" type="button">Ingresa</button>
+                    <a class="text-muted" href="#!"> Olvidaste tu contraseña?</a>
+                  </div>
+
+                  <div class="d-flex align-items-center justify-content-center pb-4">
+                    <p class="mb-0 me-2">No tienes una cuenta?</p>
+                    <button type="button" class="btn btn-danger">Regístrate</button>
+                  </div>
+
+                </form>
+
+              </div>
+            </div>
+            <div class="col-lg-6 d-flex align-items-center gradient-custom-2">
+              <div class="text-black px-3 py-4 p-md-5 mx-md-4">
+                <h4 class="mb-4">Aceptamos las siguientes Criptomonedas</h4>
+				<div class="container">
+  <div class="row justify-content-md-center">
+    <div class="col col-lg-2">
+      <i class="fab fa-bitcoin fa-3x m-2"></i>
+    </div>
+    <div class="col-md-auto">
+      <i class="fab fa-ethereum fa-3x p-2"></i>
+    </div>
+    <div class="col col-lg-2">
+      <i class='fab fa-galactic-republic fa-3x p-2'></i>
+    </div>
+  </div>
+  <br>
+ 
+ </div>
+                <br>
+				<h3>DISCLAIMER</h3>
+				<p class="small mb-0">El mercado de criptográfico es altamente volátil.</p>
+				<p class="small mb-0"> PIZZA MAYHEM no se responsabiliza por pérdidas generadas por especulación generada con nuestros productos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
   </div>
 </div>
-<div class="user_card ">
-				
-				<div class="d-flex justify-content-center form_container">
-					<form>
-						<div class="input-group mb-3">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-user"></i></span>
-							</div>
-							<input type="text" name="" class="form-control input_user" value="" placeholder="username">
-						</div>
-						<div class="input-group mb-2">
-							<div class="input-group-append">
-								<span class="input-group-text"><i class="fas fa-key"></i></span>
-							</div>
-							<input type="password" name="" class="form-control input_pass" value="" placeholder="password">
-						</div>
-						<div class="form-group">
-							<div class="custom-control custom-checkbox">
-								<input type="checkbox" class="custom-control-input" id="customControlInline">
-								<label class="custom-control-label" for="customControlInline">Remember me</label>
-							</div>
-						</div>
-							<div class="d-flex justify-content-center mt-3 login_container">
-				 	<button type="button" name="button" class="btn login_btn">Login</button>
-				   </div>
-					</form>
-				</div>
-		
-				<div class="mt-4">
-					<div class="d-flex justify-content-center links">
-						Don't have an account? <a href="#" class="ml-2">Sign Up</a>
-					</div>
-					<div class="d-flex justify-content-center links">
-						<a href="#">Forgot your password?</a>
-					</div>
-				</div>
-			</div>
-
-
-
-    </div>
-
-    
-   
+</div>  
 </template>
 
 <script>
@@ -59,104 +87,5 @@
 </script>
 
 <style scoped>
-.card-img-home {
-  width: 100%;
-  
-  object-fit: cover;
-  opacity: 30%;
-}
 
-@media screen and (max-width: 299px) {
- .card-img-home {
-  width: 100%;
-  max-height: 20vw;
-  min-height: 50vw;
-  object-fit: cover;
-  opacity: 30%;
-}
-}
-
-@media screen and (min-width: 300px) and (max-width: 899px) {
- .card-img-home {
-  width: 100%;
-  max-height: 35vw;
-  
-  object-fit: cover;
-  opacity: 30%;
-}
-}
-
-@media screen and (min-width: 900px) {
-   
-    .card-img-home {
-  width: 100%;
-  max-height: 20vw;
-  
-  object-fit: cover;
-  opacity: 30%;
-}
-}
-
-.user_card {
-			height: 400px;
-			width: 350px;
-			margin-top: auto;
-			margin-bottom: auto;
-			background: #f39c12;
-			position: relative;
-			display: flex;
-			justify-content: center;
-			flex-direction: column;
-			padding: 10px;
-			box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			-webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			-moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-			border-radius: 5px;
-
-		}
-		.brand_logo_container {
-			position: absolute;
-			height: 170px;
-			width: 170px;
-			top: -75px;
-			border-radius: 50%;
-			background: #60a3bc;
-			padding: 10px;
-			text-align: center;
-		}
-		.brand_logo {
-			height: 150px;
-			width: 150px;
-			border-radius: 50%;
-			border: 2px solid white;
-		}
-		.form_container {
-			margin-top: 100px;
-		}
-		.login_btn {
-			width: 100%;
-			background: #c0392b !important;
-			color: white !important;
-		}
-		.login_btn:focus {
-			box-shadow: none !important;
-			outline: 0px !important;
-		}
-		.login_container {
-			padding: 0 2rem;
-		}
-		.input-group-text {
-			background: #c0392b !important;
-			color: white !important;
-			border: 0 !important;
-			border-radius: 0.25rem 0 0 0.25rem !important;
-		}
-		.input_user,
-		.input_pass:focus {
-			box-shadow: none !important;
-			outline: 0px !important;
-		}
-		.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-			background-color: #c0392b !important;
-		}
 </style>
