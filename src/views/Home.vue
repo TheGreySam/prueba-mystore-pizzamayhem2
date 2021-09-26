@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <div class="">
+    <div>
       
 
 <div class="card bg-dark text-white">
