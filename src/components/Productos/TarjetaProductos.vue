@@ -1,16 +1,16 @@
 <template>
-    <div class="card" style="width: 18rem">
+    <div class="card text-white bg-danger" style="width: 25rem">
     <img class="card-img-top" :src="producto.imagen" alt="Card image cap" />
-    <div class="card-body">
-      <h6>{{ producto.nombre }}</h6>
+    <div class="card-body bg-warning text-success ">
+      <h1>{{ producto.nombre }}</h1>
     </div>
     <ul class="list-group">
       <li class="list-group-item">Categoria: {{ producto.categoria }}</li>
       <li class="list-group-item">Peso: {{ producto.peso }}</li>
       <li class="list-group-item">Precio: ${{ producto.precio.toString().toLocaleLowerCase() }}</li>
-      <li class="list-group-item">
-        Descuento:
-        {{ producto.oferta ? `${producto.descuento}% off` : 'Sin descuento asociado' }}
+      <li class="list-group-item text-success bg-warning">
+        <h3>Descuento:</h3>
+        <h2>{{ producto.oferta ? `${producto.descuento} off` : 'Sin descuento asociado' }}</h2>
       </li>
     </ul>
   </div>
@@ -28,3 +28,7 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+</style>

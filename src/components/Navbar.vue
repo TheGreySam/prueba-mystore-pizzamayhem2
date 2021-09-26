@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-dark navpizza shadow p-3">
     <a class="mayhem navbar-brand p-2" href="#">
-      <i class="fas fa-pizza-slice p-3" style="color: white"></i>PIZZA MAYHEM
+      <i class="fas fa-pizza-slice p-3 text-warning"></i>PIZZA MAYHEM
     </a>
     <button
       class="navbar-toggler btn"

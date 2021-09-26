@@ -1,20 +1,24 @@
 <template>
   <div class="home">
     <div class="">
-      <div class="card bg-dark text-white">
-  <img class="card-img-home " src="@/assets/350606.jpg" alt="Card image">
+      
+
+<div class="card bg-dark text-white">
+  <img class="card-img-home" src="@/assets/350606.jpg" alt="Card image">
   <div class="card-img-overlay">
-    <i class="fas fa-pizza-slice fa-10x p-3"></i>
+    <i class="fas fa-pizza-slice p-3 text-warning"></i>
     <h5 class="card-title">Bienvenido a PIZZA MAYHEM</h5>
     <p class="card-text">Donde podras armar tu pizza y pagarla con</p>
     <h5 class="card-text">CRIPTOMONEDAS</h5>
   </div>
 </div>
 
+
+
     </div>
 
-    <div>
-    <h4>Todos los productos</h4>
+    <div class="bg-danger">
+    <h2 class="text-white p-3 bg-">Elige tu Pizza!</h2>
     <div class="row">
       <div
         class="col-sm mb-4 mb-md-0"
@@ -54,9 +58,48 @@ export default {
 }
 .card-img-home {
   width: 100%;
-  height: 20vw;
+  
   object-fit: cover;
   opacity: 30%;
+}
+
+@media screen and (max-width: 299px) {
+    .fas {
+        font-size: 1.5em;
+    }
+    .card-img-home {
+  width: 100%;
+  max-height: 20vw;
+  min-height: 50vw;
+  object-fit: cover;
+  opacity: 30%;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 899px) {
+    .fas {
+        font-size: 4em;
+    }
+    .card-img-home {
+  width: 100%;
+  max-height: 55vw;
+  
+  object-fit: cover;
+  opacity: 30%;
+}
+}
+
+@media screen and (min-width: 900px) {
+    .fas {
+        font-size: 8em;
+    }
+    .card-img-home {
+  width: 100%;
+  max-height: 20vw;
+  
+  object-fit: cover;
+  opacity: 30%;
+}
 }
 
 </style>

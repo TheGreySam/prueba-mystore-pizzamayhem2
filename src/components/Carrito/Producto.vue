@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card hoverCard">
     <div class="row">
       <div class="col-md-4">
         <img :src="producto.imagen" class="w-100" />
@@ -26,6 +26,7 @@
               ).toLocalesString('de-DE')
             }}
           </p>
+          
         </div>
       </div>
     </div>
@@ -33,4 +34,9 @@
 </template>
 
 <script>
+
 </script>
+
+<style scoped>
+
+</style>
