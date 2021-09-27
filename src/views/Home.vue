@@ -3,7 +3,7 @@
     <div>
       
 
-<div class="card bg-dark text-white">
+<div class="card bg-dark text-white container-fluid">
   <img class="card-img-home" src="@/assets/350606.jpg" alt="Card image">
   <div class="card-img-overlay">
     <i class="fas fa-pizza-slice p-3 text-warning"></i>

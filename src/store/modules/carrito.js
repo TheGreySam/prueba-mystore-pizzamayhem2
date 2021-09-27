@@ -29,6 +29,9 @@ export const carritoModule = {
         },
         QUITAR_PRODUCTO(state, indiceProducto) {
             state.todosLosProductos.splice(indiceProducto)
+        },
+        QUITAR_TODOS_PRODUCTOS(state) {
+            state.todosLosProductos = []
         }
     },
     actions: {
@@ -75,16 +78,13 @@ export const carritoModule = {
             }
         }
     },
-//    comprar(context) {
-//        return new Promise((resolve) ->{
-//            setTimeout(() -> {
-//                await delay(5000) {
-//                    console.log('Productos comprados'),
-//                console.table(''),
-//                context.commit('QUITAR_TODOS_PRODUCTOS')
-//                }
-//                
-//            })
-//        })
-//    }
+    comprar(context) {
+        return new Promise((resolve) => {
+            setTimeout(() => {
+                context.commit('QUITAR_TODOS_PRODUCTOS')
+                resolve()
+            }, 2000)
+        })
+        
+    }
 }
