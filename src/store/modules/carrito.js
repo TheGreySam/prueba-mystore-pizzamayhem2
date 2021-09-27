@@ -71,7 +71,7 @@ export const carritoModule = {
                     context.commit('QUITAR_CANTIDAD_PRODUCTO', indiceDelProductoQueYoQuieroBuscar)
                 } else {
                     context.commit("QUITAR_PRODUCTO")
-                }
+                } 
             }
         }
     },
@@ -86,5 +86,5 @@ export const carritoModule = {
 //                
 //            })
 //        })
-    }
-//}
+//    }
+}

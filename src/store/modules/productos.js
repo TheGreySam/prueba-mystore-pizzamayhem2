@@ -11,7 +11,7 @@ export const productosModule = {
                 oferta: true,
                 stock: 15,
                 estaenCarrito: false,
-                descuento: "15%",
+                descuento: 15,
                 imagen: require("@/assets/284245.jpg")
             },
             {
@@ -23,7 +23,7 @@ export const productosModule = {
                 oferta: true,
                 stock: 11,
                 estaenCarrito: false,
-                descuento: "30%",
+                descuento: 30,
                 imagen: require("@/assets/285677.jpg")
             },
             {
@@ -35,7 +35,7 @@ export const productosModule = {
                 oferta: false,
                 stock: 9,
                 estaenCarrito: false,
-                descuento: "25%",
+                descuento: 25,
                 imagen: require("@/assets/285777.jpg")
             },
             {
@@ -47,7 +47,7 @@ export const productosModule = {
                 oferta: true,
                 stock: 10,
                 estaenCarrito: false,
-                descuento: "15%",
+                descuento: 15,
                 imagen: require("@/assets/287411.jpg")
             },
             {
@@ -59,7 +59,7 @@ export const productosModule = {
                 oferta: false,
                 stock: 15,
                 estaenCarrito: false,
-                descuento: "15%",
+                descuento: 15,
                 imagen: require("@/assets/350606.jpg")
             },
             {
@@ -71,7 +71,7 @@ export const productosModule = {
                 oferta: true,
                 stock: 14,
                 estaenCarrito: false,
-                descuento: "15%",
+                descuento: 15,
                 imagen: require("@/assets/284245.jpg")
             },
             {
@@ -83,7 +83,7 @@ export const productosModule = {
                 oferta: true,
                 stock: 20,
                 estaenCarrito: false,
-                descuento: "30%",
+                descuento: 30,
                 imagen: require("@/assets/285677.jpg")
             },
             {
@@ -95,7 +95,7 @@ export const productosModule = {
                 oferta: false,
                 stock: 15,
                 estaenCarrito: false,
-                descuento: "25%",
+                descuento: 25,
                 imagen: require("@/assets/285777.jpg")
             },
             {
@@ -107,7 +107,7 @@ export const productosModule = {
                 oferta: false,
                 stock: 7,
                 estaenCarrito: false,
-                descuento: "15%",
+                descuento: 15,
                 imagen: require("@/assets/287411.jpg")
             },
             {
@@ -119,7 +119,7 @@ export const productosModule = {
                 oferta: true,
                 stock: 12,
                 estaenCarrito: false,
-                descuento: "15%",
+                descuento: 15,
                 imagen: require("@/assets/350606.jpg")
             },
     ],

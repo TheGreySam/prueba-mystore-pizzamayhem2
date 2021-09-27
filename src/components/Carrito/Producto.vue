@@ -4,14 +4,16 @@
       <div class="col-md-4">
         <img :src="producto.imagen" class="card-img" />
       </div>
-      <div class="col pt-5">
+      <div class="col">
         <div class="card-block ">
           <h2 class="card-title px-2 bg-warning text-danger">{{ producto.nombre }}</h2>
           
           <div class="row align-items-center">
             <div class="col">
-              <p class="card-text">Precio: ${{producto.precio}}</p>
-            
+              <p class="card-text">Precio: $ {{producto.precio}}</p>
+              <p class="card-text">Descuento: %
+                {{ producto.descuento}}</p>
+                            
              <ul class="">
                 <button type="button" class="btn btn-outline-light btn-lg m-2"
                 @click="$store.dispatch('carrito/quitarProducto', producto)">-</button>
@@ -21,10 +23,14 @@
              </ul>
              </div>
           </div>
-          <h2 class="card-text p-3 bg-warning text-danger"
-          >Subtotal: ${{producto.cantidad * producto.precio}}</h2>
-          
-          
+          <div class="p-3 bg-warning text-danger">
+            <h2>Subtotal: $ {{producto.cantidad * producto.precio}} -%{{ producto.descuento}}</h2>
+            <h1>
+              Total : $
+              {{ parseInt(producto.precio * (1 - producto.descuento / 100) * producto.cantidad)}}
+            </h1>
+          </div>
+              
         </div>
       </div>
     </div>

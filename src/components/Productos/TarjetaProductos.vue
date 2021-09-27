@@ -10,7 +10,7 @@
       <li class="list-group-item">Precio: ${{ producto.precio.toString().toLocaleLowerCase() }}</li>
       <li class="list-group-item text-danger bg-warning">
         <h3>Descuento:</h3>
-        <h1>{{ producto.oferta ? `${producto.descuento} off` : 'Sin descuento asociado' }}</h1>
+        <h1>{{ producto.oferta ? `${producto.descuento}% off` : 'Sin descuento asociado' }}</h1>
       </li>
     </ul>
     <div class="card-actions">
