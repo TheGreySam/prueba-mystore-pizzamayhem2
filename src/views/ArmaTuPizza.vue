@@ -41,18 +41,18 @@
       </div>
 
       <div class="form-group">
-        <label for="categoria">Categoria</label>
-        <select
-          name="categoria"
-          id="categoria"
+        <label for="categoria">Categoría</label>
+        <input
+          type="text"
           class="form-control"
+          id="categoria"
+          name="categoria"
+          minlength="4"
+          maxlength="40"
           required
           v-model="producto.categoria"
-        >
-          <option value="" selected disabled>Elija una opción</option>
-          <option value="dulce">Dulce</option>
-          <option value="salado">Salado</option>
-        </select>
+        />
+        
       </div>
 
       <div class="form-group">
@@ -66,6 +66,36 @@
           v-model="producto.imagen"
         />
       </div>
+
+      <div class="form-group">
+        <label for="oesi">Peso</label>
+        <input
+          v-model.number="producto.peso"
+          type="number"
+          min="100"
+          max="9999"
+          step="1"
+          class="form-control"
+          id="peso"
+          name="peso"
+          required
+        />
+      </div> 
+
+      <div class="form-group">
+        <label for="stock">Stock</label>
+        <input
+          v-model.number="producto.stock"
+          type="number"
+          min="100"
+          max="9999"
+          step="1"
+          class="form-control"
+          id="stock"
+          name="stock"
+          required
+        />
+      </div>      
 
       <div class="form-group">
         <label for="precio">Precio</label>

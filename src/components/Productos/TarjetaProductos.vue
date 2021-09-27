@@ -7,6 +7,7 @@
     <ul class="list-group">
       <li class="list-group-item">Categoria: {{ producto.categoria }}</li>
       <li class="list-group-item">Peso: {{ producto.peso }}</li>
+      <li class="list-group-item">Stock disponible: {{ producto.stock }}</li>
       <li class="list-group-item">Precio: ${{ producto.precio.toString().toLocaleLowerCase() }}</li>
       <li class="list-group-item text-danger bg-warning">
         <h3>Descuento:</h3>
