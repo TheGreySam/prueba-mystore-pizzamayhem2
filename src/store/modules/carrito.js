@@ -25,16 +25,21 @@ export const carritoModule = {
         },
         AGREGAR_CANTIDAD_PRODUCTO(state, indiceProducto) {
             state.todosLosProductos[indiceProducto].cantidad++
+            state.todosLosProductos[indiceProducto].stock--
         },
         QUITAR_CANTIDAD_PRODUCTO(state, indiceProducto) {
             state.todosLosProductos[indiceProducto].cantidad--
+            state.todosLosProductos[indiceProducto].stock++
         },
         QUITAR_PRODUCTO(state, indiceProducto) {
             state.todosLosProductos.splice(indiceProducto)
         },
         QUITAR_TODOS_PRODUCTOS(state) {
             state.todosLosProductos = []
-        }
+        },
+//        DISMINUIR_STOCK_PRODUCTO(state) {
+//            state.todosLosProductos[producto].stock--
+//        }
     },
     actions: {
         agregarProducto(context, producto) {
@@ -43,10 +48,11 @@ export const carritoModule = {
             )
             if (indiceDelProductoQueYoQuieroBuscar === -1) {
                 const { stock, ...nuevoProducto} = producto
-                context.commit("AGREGAR_PRODUCTO", { ...nuevoProducto, cantidad: 1})
+                context.commit("AGREGAR_PRODUCTO", { ...nuevoProducto, cantidad: 1, stock:-1})
             } else {
                 context.commit("AGREGAR_CANTIDAD_PRODUCTO", indiceDelProductoQueYoQuieroBuscar)
-            }
+            } 
+            //context.commit('DISMINUIR_STOCK_PRODUCTO', producto)
             
             
 

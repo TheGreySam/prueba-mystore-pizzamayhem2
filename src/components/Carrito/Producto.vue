@@ -10,6 +10,7 @@
           
           <div class="row align-items-center">
             <div class="col">
+              <p class="card-text">Stock Disponible: {{ producto.stock }}</p>
               <p class="card-text">Precio: $ {{producto.precio}}</p>
               <p class="card-text">Descuento: %
                 {{ producto.descuento}}</p>

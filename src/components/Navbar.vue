@@ -23,16 +23,17 @@
           <router-link to="/armatupizza" class="nav-link">
             Arma tu pizza
           </router-link>
-        </li>        
-        <li class="nav-item">
-          <router-link to="/login" class="nav-link">Login</router-link>
-        </li>
+        </li>   
         <li class="carrito">
           <router-link to="/carrito" class="nav-link">
           Carrito
             <i class="fas fa-shopping-cart"></i>
           </router-link>
+        </li>     
+        <li class="nav-item">
+          <router-link to="/login" class="nav-link">Login</router-link>
         </li>
+        
 
         
         
