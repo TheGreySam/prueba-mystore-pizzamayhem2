@@ -4,7 +4,9 @@
     <!--pre>{{ $store.state.carrito.todosLosProductos }}</pre-->
 
     
-    <h1 class="text-white p-5 bg-dark">Carrito</h1>
+    <h1 class="text-white p-5 bg-dark">Carrito 
+      <button class="btn btn-outline-light btn-lg m-2">Comprar</button>
+      </h1>
     
 
     
@@ -12,11 +14,9 @@
     <Producto v-for="(producto, $index) in $store.state.carrito.todosLosProductos"
     :key="$index" 
     :producto="producto" 
+    class="shadow m-5"
     />
-
-    <button>Comprar</button>
-
-    
+   
   </div>
 </template>
 

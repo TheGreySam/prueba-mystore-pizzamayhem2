@@ -33,8 +33,17 @@ export const carritoModule = {
     },
     actions: {
         agregarProducto(context, producto) {
-            const { stock, ...nuevoProducto}= producto
-            context.commit("AGREGAR_PRODUCTO", { ...nuevoProducto, cantidad: 1})
+            const indiceDelProductoQueYoQuieroBuscar = context.state.todosLosProductos.findIndex(
+                (productoEnElCarrito) => productoEnElCarrito.nombre === producto.nombre
+            )
+            if (indiceDelProductoQueYoQuieroBuscar === -1) {
+                const { stock, ...nuevoProducto} = producto
+                context.commit("AGREGAR_PRODUCTO", { ...nuevoProducto, cantidad: 1})
+            } else {
+                context.commit("AGREGAR_CANTIDAD_PRODUCTO", indiceDelProductoQueYoQuieroBuscar)
+            }
+            
+            
 
 
 //            const indiceDelProductoQueYoQuieroBuscar = context.state.todosLosProductos.findIndex(

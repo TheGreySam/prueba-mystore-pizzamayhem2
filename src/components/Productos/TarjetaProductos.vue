@@ -14,7 +14,7 @@
       </li>
     </ul>
     <div class="card-actions">
-      <button class="btn btn-info" @click="agregarProductoAlCarrito">Agregar al Carrito</button>
+      <button class="btn btn-danger" @click="agregarProductoAlCarrito">Agregar al Carrito</button>
     </div>
   </div>
 </template>
