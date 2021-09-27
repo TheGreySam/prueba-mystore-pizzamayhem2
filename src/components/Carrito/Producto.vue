@@ -1,31 +1,31 @@
 <template>
-  <div class="card hoverCard">
+  <div class="card navpizza text-white shadow p-1 mb-5 rounded">
     <div class="row">
       <div class="col-md-4">
-        <img :src="producto.imagen" class="w-100" />
+        <img :src="producto.imagen" class="card-img" />
       </div>
       <div class="col-md-8 px-3">
         <div class="card-block px-3">
-          <h4 class="card-title">{{ producto.nombre }}</h4>
-          <p class="card-text">Precio: $({producto.precio})</p>
+          <h2 class="card-title p-2 bg-warning text-danger">{{ producto.nombre }}</h2>
+          
           <div class="row align-items-center">
+            <div class="col">
+              <p class="card-text">Precio: ${{producto.precio}}</p>
             <p class="card-text mb-0 mr-4">Cantidad: {{ producto.cantidad }}</p>
-            <div class="btn-group-vertical">
-              <button class="btn btn-info"
-              @click="$store.dispatch('carrito/agregarProducto', producto)">+</button>
-              <button class="btn btn-info"
-              @click="$store.dispatch('carrito/quitarProducto', producto)">-</button>
-              
-            </div>
+            
+            
+             <ul class="pagination pagination-lg mb-0 mr-4">
+              <li class="page-item">
+                <a class="page-link"
+                @click="$store.dispatch('carrito/quitarProducto', producto)">-</a></li>
+              <li class="page-item">
+                <a class="page-link"
+                @click="$store.dispatch('carrito/agregarProducto', producto)">+</a></li>
+             </ul>
+             </div>
           </div>
           <p class="card-text">Subtotal: ${{(producto.cantidad * producto.precio)}}</p>
-          <p class="card-text">
-            Total: ${{
-              parseInt(
-                producto.precio * (1 - producto.descuento/ 100) * producto.cantidad
-              ).toLocalesString('de-DE')
-            }}
-          </p>
+          
           
         </div>
       </div>
@@ -34,9 +34,17 @@
 </template>
 
 <script>
-
+export default {
+  props: {
+  producto: {type: Object, required: true}
+},
+}
 </script>
 
-<style scoped>
 
+<style scoped>
+.navpizza {
+  background-color: rgb(175, 35, 0);
+  
+}
 </style>

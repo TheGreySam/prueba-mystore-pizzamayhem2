@@ -13,6 +13,9 @@
         <h1>{{ producto.oferta ? `${producto.descuento} off` : 'Sin descuento asociado' }}</h1>
       </li>
     </ul>
+    <div class="card-actions">
+      <button class="btn btn-info" @click="agregarProductoAlCarrito">Agregar al Carrito</button>
+    </div>
   </div>
 </template>
 

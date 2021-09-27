@@ -9,6 +9,8 @@ export const productosModule = {
                 peso: "250 gramos",
                 precio: "15.000 pesos",
                 oferta: true,
+                stock: 15,
+                estaenCarrito: false,
                 descuento: "15%",
                 imagen: require("@/assets/284245.jpg")
             },
@@ -19,6 +21,8 @@ export const productosModule = {
                 peso: "250 gramos",
                 precio: "25.000 pesos",
                 oferta: true,
+                stock: 11,
+                estaenCarrito: false,
                 descuento: "30%",
                 imagen: require("@/assets/285677.jpg")
             },
@@ -29,6 +33,8 @@ export const productosModule = {
                 peso: "250 gramos",
                 precio: "30.000 pesos",
                 oferta: false,
+                stock: 9,
+                estaenCarrito: false,
                 descuento: "25%",
                 imagen: require("@/assets/285777.jpg")
             },
@@ -39,6 +45,8 @@ export const productosModule = {
                 peso: "300 gramos",
                 precio: "15.000 pesos",
                 oferta: true,
+                stock: 10,
+                estaenCarrito: false,
                 descuento: "15%",
                 imagen: require("@/assets/287411.jpg")
             },
@@ -49,6 +57,8 @@ export const productosModule = {
                 peso: "250 gramos",
                 precio: "32.000 pesos",
                 oferta: false,
+                stock: 15,
+                estaenCarrito: false,
                 descuento: "15%",
                 imagen: require("@/assets/350606.jpg")
             },
@@ -59,6 +69,8 @@ export const productosModule = {
                 peso: "550 gramos",
                 precio: "85.000 pesos",
                 oferta: true,
+                stock: 14,
+                estaenCarrito: false,
                 descuento: "15%",
                 imagen: require("@/assets/284245.jpg")
             },
@@ -69,6 +81,8 @@ export const productosModule = {
                 peso: "450 gramos",
                 precio: "45.000 pesos",
                 oferta: true,
+                stock: 20,
+                estaenCarrito: false,
                 descuento: "30%",
                 imagen: require("@/assets/285677.jpg")
             },
@@ -79,6 +93,8 @@ export const productosModule = {
                 peso: "750 gramos",
                 precio: "60.000 pesos",
                 oferta: false,
+                stock: 15,
+                estaenCarrito: false,
                 descuento: "25%",
                 imagen: require("@/assets/285777.jpg")
             },
@@ -89,6 +105,8 @@ export const productosModule = {
                 peso: "500 gramos",
                 precio: "75.000 pesos",
                 oferta: false,
+                stock: 7,
+                estaenCarrito: false,
                 descuento: "15%",
                 imagen: require("@/assets/287411.jpg")
             },
@@ -99,6 +117,8 @@ export const productosModule = {
                 peso: "450 gramos",
                 precio: "52.000 pesos",
                 oferta: true,
+                stock: 12,
+                estaenCarrito: false,
                 descuento: "15%",
                 imagen: require("@/assets/350606.jpg")
             },
