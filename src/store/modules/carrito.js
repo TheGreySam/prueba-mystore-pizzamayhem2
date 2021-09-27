@@ -1,5 +1,7 @@
 const delay = (ms) => new Promise((resolve) => {
-    setTimeout
+    setTimeout(() => {
+        resolve()
+    }, ms)
 })
 
 export const carritoModule = {
@@ -78,13 +80,22 @@ export const carritoModule = {
             }
         }
     },
-    comprar(context) {
-        return new Promise((resolve) => {
-            setTimeout(() => {
-                context.commit('QUITAR_TODOS_PRODUCTOS')
-                resolve()
-            }, 2000)
-        })
+//    comprar(context) {
+//        return new Promise((resolve) => {
+//            setTimeout(() => {
+//                console.log('Productos comprados')
+//                console.table(context.state.todosLosProductos)
+//                context.commit('QUITAR_TODOS_PRODUCTOS')
+//                resolve()
+//            }, 2000)
+//        })
         
+//    },
+
+    async comprar(context) {
+        await delay(2000)
+        console.log('Productos comprados')
+        console.table(context.state.todosLosProductos)
+        context.commit('QUITAR_TODOS_PRODUCTOS')
     }
 }

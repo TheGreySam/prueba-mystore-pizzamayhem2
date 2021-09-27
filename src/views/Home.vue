@@ -69,8 +69,8 @@ export default {
     }
     .card-img-home {
   width: 100%;
-  max-height: 20vw;
-  min-height: 50vw;
+  max-height: 25vw;
+  
   object-fit: cover;
   opacity: 30%;
 }

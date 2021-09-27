@@ -37,9 +37,9 @@ export default {
   },
   methods: {
     async clickPagar() {
-      console.log('Productos comprados')
-      console.table(context.state.todosLosProductos)
+      
       await this.$store.dispatch('carrito/comprar')
+      alert('Compra procesada, gracias por comprar.')
       this.$router.push('/')
     }
   }

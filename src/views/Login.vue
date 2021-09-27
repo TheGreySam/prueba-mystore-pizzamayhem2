@@ -3,7 +3,7 @@
 
 
 <div class="card navpizza text-black">
-  <img class="card-img" src="@/assets/285777.jpg" alt="Card image" style="height: 650pt; object-fit: cover;">
+  <img class="card-img" src="@/assets/285777.jpg" alt="Card image"  style="height: 650pt; object-fit: cover;"/>
   <div class="card-img-overlay ">
 	  <section class="h-500 gradient-form" >
   <div class="container py-5 h-100 ">
@@ -87,5 +87,45 @@
 </script>
 
 <style scoped>
+.card-img-home {
+  width: 100%;
+  
+  object-fit: cover;
+  opacity: 30%;
+}
 
+@media screen and (max-width: 299px) {
+    
+    .card-img-home {
+  width: 0px;
+  
+  
+  object-fit: cover;
+  opacity: 30%;
+}
+}
+
+@media screen and (min-width: 300px) and (max-width: 899px) {
+    
+    .card-img-home {
+  width: 100%;
+  max-height: 55vw;
+  
+  object-fit: cover;
+  opacity: 30%;
+}
+}
+
+@media screen and (min-width: 900px) {
+    .fas {
+        font-size: 8em;
+    }
+    .card-img-home {
+  width: 100%;
+  max-height: 20vw;
+  
+  object-fit: cover;
+  opacity: 30%;
+}
+}
 </style>

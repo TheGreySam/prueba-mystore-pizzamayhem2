@@ -4,12 +4,12 @@
     <Carousel />
 
     <transition name="vista">
-      <router-view class="bgpizza p-3"></router-view>
+      <router-view class="bgpizza p-3" style="height: 100%"></router-view>
     </transition>
 
     
 
-    <Footer />
+    <Footer class="footer"/>
   </div>
 </template>
 
@@ -33,6 +33,7 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  display: flexbox;
 }
 .bgpizza {
   background-color: rgb(228, 194, 0);
@@ -46,10 +47,12 @@ export default {
 }
 .footer {
   position:relative;
-  bottom:0;
+  
+  
   color:snow;
   width: 100%;
-  font-weight: lighter;
+  
+
 }
 
 .vista-enter-active,
